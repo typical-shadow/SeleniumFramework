@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ecommerce Application]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="rahualshetty.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Login Error validation Flow(failed)">
+    <classes>
+      <class name="rahualshetty.tests.ErrorValidation">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="loginErrorValidation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- rahualshetty.tests.ErrorValidation -->
+    </classes>
+  </test> <!-- Login Error validation Flow(failed) -->
+</suite> <!-- Failed suite [Ecommerce Application] -->
